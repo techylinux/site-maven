@@ -20,7 +20,7 @@ pipeline {
 	    {
 	      steps {
 	       script {
-	          docker.withRegistry( 'https://registry.hub.docker.com', 'dockerp'){
+	          docker.withRegistry( 'https://registry.hub.docker.com', 'dockerp' ){
 	           /* Build docker images locally */
 	           myImage = docker.build("smtksumit/devops:v1")
 
