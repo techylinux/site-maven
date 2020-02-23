@@ -22,7 +22,7 @@ pipeline {
 	       script {
 	          docker.withRegistry( 'https://registry.hub.docker.com', 'dockerp' ){
 	           /* Build docker images locally */
-	           myImage = docker.build("smtksumit/devops:v1")
+	           myImage = docker.build("smtksumit/devops")
 
 	           /* push the images to the Registry */
 	            myImage.push()
